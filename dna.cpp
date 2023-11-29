@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -7,7 +8,7 @@ int main()
     cin.tie(nullptr);
     cout.tie(nullptr);
     freopen("dna.inp", "r", stdin);
-    freopen("test.out", "w", stdout);
+    freopen("dna.out", "w", stdout);
     string s;
     cin >> s;
     int n;
@@ -33,7 +34,7 @@ int main()
             if(cnt <= 2)
                 cout << x << endl;
         }
+        if(!check && n == 0) cout << '0';
     }
-        if(!check) cout << '0';
     return 0;
 }
