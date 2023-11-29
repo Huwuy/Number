@@ -1,4 +1,3 @@
-
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -14,17 +13,14 @@ int main()
     int n;
     cin >> n;
     int x = 0;
-    bool check = true;
-    while(n--)
+    bool check = false;
+    while(n > 0)
     {
         string t;
         cin >> t;
         x++;
         if(s.length() != t.length())
-        {
             n -=1;
-            check = false;
-        }
         else
         {
             check = true;
@@ -33,8 +29,10 @@ int main()
                 if(s[i] != t[i]) cnt++;
             if(cnt <= 2)
                 cout << x << endl;
+            n--;
         }
         if(!check && n == 0) cout << '0';
     }
     return 0;
 }
+
