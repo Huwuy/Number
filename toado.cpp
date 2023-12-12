@@ -1,3 +1,4 @@
+// tim do dai quang duong tu (x1,y1) den (x2,y2)
 #include<bits/stdc++.h>
 using namespace std;
 
