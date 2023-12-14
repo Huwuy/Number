@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long
 
-ll a, n;
+long long a, n;
+
 
 int main()
 {
@@ -17,6 +17,6 @@ int main()
         n = 4;
     else
         n %= 4;
-    cout << (ll)pow(a,n)%10;
+    cout << (long long)pow(a,n) % 10;
     return 0;
 }
